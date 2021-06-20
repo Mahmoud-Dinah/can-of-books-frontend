@@ -1,7 +1,7 @@
-# Project Name
+# can of books
 
-**Author**: Team Member Names Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Author**: Mahmoud Dinah & Nawal Ahmad
+Version: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 
@@ -20,13 +20,44 @@
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
-
 ## Credit and Collaborations
+
 
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
----
 
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+
+## Collaboration Section
+
+### Logistical
+
+- What hours will you be available to communicate? during lab time & after lap time.
+
+- What platform will you use to communicate (ie. Slack, phone …)? Slack and virtual Campus
+
+- How often will you take breaks? as needed
+
+- What is your plan if you start to fall behind? work hard till finish
+
+
+### Conflict Resolution
+
+- What will your team do if one person is pulling all the weight while
+  the other person is not contributing? discuss the situation, and see the reason behind not collaboration.
+
+- What will your team do if one person is taking over
+  the project and not letting the other member contribute? talking about the importance of sharing and letting everyone talk and work
+
+- How will you approach each other and the challenge of building
+  an application knowing that it is impossible for two people to be
+  at the exact same place in understanding and skill level? dividing the work base on our strengths ,and communicate all the time
+
+```
 Name of feature: redirect user when login
 
 Estimate of time needed to complete: 30 minute
@@ -36,76 +67,16 @@ Start time: 2:00 pm
 Finish time: 2:30 pm
 
 Actual time needed to complete: 30 minute
+```
 
----
+```
+Name of feature: Authentication
 
-# Getting Started with Create React App
+Estimate of time needed to complete: 1 hour
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Start time: 2.30:00 pm
 
-## Available Scripts
+Finish time: 5:30 pm
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Actual time needed to complete: 3 hours
+```
