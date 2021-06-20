@@ -1,11 +1,11 @@
-# can of books
+# Project Name
 
-**Author**: Hatem Husnieh & Aseel Hamamreh  
-**Version**: 1.2.0
+**Author**: Team Member Names Goes Here
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 
-- Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. This application, is created to track what books have impacted us, and what's recommended to read next.
+<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
 
@@ -25,76 +25,87 @@
 
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
-## Collaboration Section
+---
 
-### Logistical
+Name of feature: **************\_\_\_\_**************
 
-- What hours will you be available to communicate?
+Estimate of time needed to complete: **\_**
 
-during lab time & after lap time.
+Start time: **\_**
 
-- What platform will you use to communicate (ie. Slack, phone …)?
+Finish time: **\_**
 
-Slack
+Actual time needed to complete: **\_**
 
-- How often will you take breaks?
+---
 
-as needed
+# Getting Started with Create React App
 
-- What is your plan if you start to fall behind?
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-work days and night till finish
+## Available Scripts
 
-### Conflict Resolution
+In the project directory, you can run:
 
-- What will your team do if one person is pulling all the weight while
-  the other person is not contributing?
+### `npm start`
 
-negotiate and discuss the situation, and see why there is not collaboration.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- What will your team do if one person is taking over
-  the project and not letting the other member contribute?
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-talk about and explain the importance of sharing and letting everyone talk and work
+### `npm test`
 
-- How will you approach each other and the challenge of building
-  an application knowing that it is impossible for two people to be
-  at the exact same place in understanding and skill level?
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-dividing the work base on our strengths , and communicate continuously
+### `npm run build`
 
-```
-Name of feature: Authentication
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Estimate of time needed to complete: 3 hours
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Start time: 1:00 pm
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Finish time: 6:00 pm
+### `npm run eject`
 
-Actual time needed to complete: 5 hours
-```
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```
-Name of feature: Resource Create and Delete
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Estimate of time needed to complete: 6 hours
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Start time: 3:00pm
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Finish time: 7:30pm
+## Learn More
 
-Actual time needed to complete: 4:30 hours
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-```
-Name of feature: Update a Resource
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Estimate of time needed to complete: 3 hours
+### Code Splitting
 
-Start time: 3:00pm
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Finish time: 5:00pm
+### Analyzing the Bundle Size
 
-Actual time needed to complete: 2:00 hours
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
