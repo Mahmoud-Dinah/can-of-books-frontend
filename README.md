@@ -1,7 +1,6 @@
 # Project Name
 
-**Author**: Mahmoud Dinah and Nawal Ahmad
-
+**Author**: Team Member Names Goes Here
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
@@ -28,15 +27,15 @@
 
 ---
 
-Name of feature: Authentication
+Name of feature: redirect user when login
 
-Estimate of time needed to complete:1-2 hours
+Estimate of time needed to complete: 30 minute
 
-Start time: 1pm
+Start time: 2:00 pm
 
-Finish time: 5pm
+Finish time: 2:30 pm
 
-Actual time needed to complete: 4 hours
+Actual time needed to complete: 30 minute
 
 ---
 
