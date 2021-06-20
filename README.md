@@ -23,15 +23,15 @@
 --------------------------------------------------------
 
 
-Name of feature: ________________________________
+Name of feature: redirect user when login
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 30 minute
 
-Start time: _____
+Start time: 2:00 pm
 
-Finish time: _____
+Finish time: 2:30 pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 30 minute
 
 -------------------------------------------------------
 
