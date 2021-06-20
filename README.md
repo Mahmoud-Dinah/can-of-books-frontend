@@ -37,6 +37,7 @@ Version: 1.0.0 (increment the patch/fix version number if you make more commits 
 
 - What is your plan if you start to fall behind? work hard till finish
 
+
 ### Conflict Resolution
 
 - What will your team do if one person is pulling all the weight while
