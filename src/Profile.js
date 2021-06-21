@@ -30,9 +30,23 @@ export class Profile extends Component {
     console.log(this.props.auth0);
     return (
       <div>
-        <h2>{this.state.userName}</h2>
-        <p>{this.state.userEmail}</p>
-        <img src={this.state.userPicture} alt={this.state.userName} />
+        <div className='profile-container'>
+          <Card style={{ width: '18rem' }}>
+            <Card.Img
+              variant='top'
+              src={this.state.userPicture}
+              alt={his.state.userName}
+            />
+            <Card.Body>
+              <Card.Title>
+                <h2>{this.state.userName}</h2>
+              </Card.Title>
+              <Card.Text>
+                <p>{his.state.userEmai}</p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
         {this.state.booksData.length > 0 && (
           <Books books={this.state.booksData} />
         )}
