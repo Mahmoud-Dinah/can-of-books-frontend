@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { withAuth0 } from '@auth0/auth0-react';
 import axios from 'axios';
 import Books from './Books';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card'
+
 
 export class Profile extends Component {
   constructor(props) {
@@ -15,14 +18,11 @@ export class Profile extends Component {
     };
   }
   componentDidMount = () => {
-    axios
-      .get(`${this.state.serverUrl}/books?email=${this.state.userEmail}`)
-      .then((response) => {
+    axios.get(`${this.state.serverUrl}/books?email=${this.state.userEmail}`).then((response) => {
         this.setState({
           booksData: response.data[0].books,
         });
-      })
-      .catch((error) => {
+      }).catch((error) => {
         alert(error.message);
       });
   };
@@ -35,20 +35,22 @@ export class Profile extends Component {
             <Card.Img
               variant='top'
               src={this.state.userPicture}
-              alt={his.state.userName}
+              alt={this.state.userName}
             />
             <Card.Body>
               <Card.Title>
                 <h2>{this.state.userName}</h2>
               </Card.Title>
               <Card.Text>
-                <p>{his.state.userEmai}</p>
+                <p>{this.state.userEmai}</p>
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
         {this.state.booksData.length > 0 && (
-          <Books books={this.state.booksData} />
+          <Books
+           books={this.state.booksData} 
+           />
         )}
       </div>
     );
