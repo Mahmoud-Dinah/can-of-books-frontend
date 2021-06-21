@@ -5,7 +5,7 @@ Version: 1.0.0 (increment the patch/fix version number if you make more commits 
 
 ## Overview
 
-- Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. This application, is created to track what books have impacted us, and what's recommended to read next.
+<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
 
@@ -20,8 +20,15 @@ Version: 1.0.0 (increment the patch/fix version number if you make more commits 
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
-
 ## Credit and Collaborations
+
+
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
