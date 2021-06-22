@@ -17,64 +17,82 @@ export class Profile extends Component {
       serverUrl: process.env.REACT_APP_SERVER_URL,
       booksData: [],
       bookName: '',
+      bookDescription: '',
+      bookStatus: '',
       showUpdateForm: false,
-      bookNameUpdate:'',
-      bookIndex:0 ,
+      bookNameUpdate: '',
+      bookDescriptionUpdate: '',
+      bookStatusUpdate: '',
+      bookIndex: 0,
     };
   }
 
+  updateBookName = (bookName) => this.setState({ bookName });
+  updateBookDescription = (bookDescription) =>
+    this.setState({ bookDescription });
+  updateBookStatus = (bookStatus) => this.setState({ bookStatus });
 
-  updateBookName = (bookName) => this.setState({bookName})
-  updateBookNameUpdateForm = (bookName) => this.setState({bookNameUpdate: bookName});
+  updateBookNameUpdateForm = (bookName) =>
+    this.setState({ bookNameUpdate: bookName });
+  // updateBookDescriptionUpdateForm = (bookDescription) =>
+  //   this.setState({ bookDescriptionUpdate: bookDescription });
+  // updateBookStatusUpdateForm = (bookStatus) =>
+  //   this.setState({ bookStatusUpdate: bookStatus });
 
-  showUpdateForm = (bookObject, idx) => this.setState({showUpdateForm: !this.state.showUpdateForm, bookNameUpdate: bookObject.name, bookIndex: idx})
+  showUpdateForm = (bookObject, idx) =>
+    this.setState({
+      showUpdateForm: !this.state.showUpdateForm,
+      bookNameUpdate: bookObject.name,
+      bookIndex: idx,
+    });
 
   creatMyBook = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const reqBody = {
       catName: this.state.bookName,
-      userEmail: this.state.userEmail
-  }
+      userEmail: this.state.userEmail,
+    };
 
-  axios.post(`${this.state.serverUrl}/book`, reqBody).then(response => {
-    this.setState({
-        booksData: response.data.book
-    })
-}).catch(error =>
-    alert(error.message)
-)
-  }
+    axios
+      .post(`${this.state.serverUrl}/book`, reqBody)
+      .then((response) => {
+        this.setState({
+          booksData: response.data.book,
+        });
+      })
+      .catch((error) => alert(error.message));
+  };
 
   updateMyBook = (e) => {
     e.preventDefault();
     const reqBody = {
-        bookName: this.state.bookNameUpdate,
-        userEmail: this.state.userEmail
-    }
+      bookName: this.state.bookNameUpdate,
+      userEmail: this.state.userEmail,
+    };
 
-    axios.put(`${this.state.serverUrl}/book/${this.state.bookIndex}`, reqBody).then(response => {
-      this.setState({
-          booksData: response.data.book
+    axios
+      .put(`${this.state.serverUrl}/book/${this.state.bookIndex}`, reqBody)
+      .then((response) => {
+        this.setState({
+          booksData: response.data.book,
+        });
       })
-  }).catch(error =>
-      alert(error.message)
-  )
-  }
-
+      .catch((error) => alert(error.message));
+  };
 
   deleteMyBook = (index) => {
-    axios.delete(`${this.state.serverUrl}/book/${index}?email=${this.state.userEmail}`).then(response => {
+    axios
+      .delete(
+        `${this.state.serverUrl}/book/${index}?email=${this.state.userEmail}`
+      )
+      .then((response) => {
         this.setState({
-            booksData: response.data.book,
-            showUpdateForm: false
+          booksData: response.data.book,
+          showUpdateForm: false,
         });
-    }).catch(error =>
-        alert(error.message)
-    )
-}
-
-
-
+      })
+      .catch((error) => alert(error.message));
+  };
 
   componentDidMount = () => {
     axios
@@ -100,37 +118,41 @@ export class Profile extends Component {
               alt={this.state.userName}
             />
             <Card.Body>
-            <div>
-                    <CreateForm
-                        updateBookName={this.updateBookName}
-                        createMyBook={this.creatMyBook}
-                    />
+              <div>
+                <CreateForm
+                  updateBookName={this.updateBookName}
+                  createMyBook={this.creatMyBook}
+                  updateBookDescription={this.updateBookDescription}
+                  updateBookStatus={this.updateBookStatus}
+                />
+              </div>
+              {this.state.showUpdateForm && (
+                <div>
+                  <UpdateForm
+                    updateMyBook={this.updateMyBook}
+                    updateBookNameUpdateForm={this.updateBookNameUpdateForm}
+                    bookNameUpdate={this.state.bookNameUpdate}
+                    updateBookDescriptionUpdateForm={
+                      this.updateBookDescriptionUpdateForm
+                    }
+                    updateBookStatusUpdateForm={this.updateBookStatusUpdateForm}
+                  />
                 </div>
-                {this.state.showUpdateForm &&
-                    <div>
-                        <UpdateForm
-                            updateMyBook={this.updateMyBook}
-                            updateBookNameUpdateForm={this.updateBookNameUpdateForm}
-                            bookNameUpdate={this.state.bookNameUpdate}
-
-                        />
-                    </div>
-                }
+              )}
               <Card.Title>
                 <h2>{this.state.userName}</h2>
               </Card.Title>
               <Card.Text>
                 <p>{this.state.userEmai}</p>
               </Card.Text>
-              
             </Card.Body>
           </Card>
         </div>
         {this.state.booksData.length > 0 && (
           <Books
-          books={this.state.booksData}
-          deleteMyBook={this.deleteMyBook}
-          showUpdateForm={this.showUpdateForm}
+            books={this.state.booksData}
+            deleteMyBook={this.deleteMyBook}
+            showUpdateForm={this.showUpdateForm}
           />
         )}
       </div>
