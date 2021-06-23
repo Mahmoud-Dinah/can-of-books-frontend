@@ -32,8 +32,8 @@ export class Profile extends Component {
     this.setState({ bookDescription });
   updateBookStatus = (bookStatus) => this.setState({ bookStatus });
 
-  updateBookNameUpdateForm = (bookName) =>
-    this.setState({ bookNameUpdate: bookName });
+  // updateBookNameUpdateForm = (bookName) =>
+  //   this.setState({ bookNameUpdate: bookName });
   // updateBookDescriptionUpdateForm = (bookDescription) =>
   //   this.setState({ bookDescriptionUpdate: bookDescription });
   // updateBookStatusUpdateForm = (bookStatus) =>
@@ -49,16 +49,21 @@ export class Profile extends Component {
   creatMyBook = (e) => {
     e.preventDefault();
     const reqBody = {
-      catName: this.state.bookName,
-      userEmail: this.state.userEmail,
-    };
+      name: this.state.bookName,
+      email: this.state.userEmail,
+      description: this.state.bookDescription,
+      status: this.state.bookStatus,
 
+    };
+console.log("insde creat myBook");
     axios
       .post(`${this.state.serverUrl}/book`, reqBody)
       .then((response) => {
+        console.log(response);
         this.setState({
           booksData: response.data.book,
         });
+
       })
       .catch((error) => alert(error.message));
   };
@@ -99,7 +104,7 @@ export class Profile extends Component {
       .get(`${this.state.serverUrl}/books?email=${this.state.userEmail}`)
       .then((response) => {
         this.setState({
-          booksData: response.data[0].books,
+          booksData: response.data.books,
         });
       })
       .catch((error) => {
@@ -143,7 +148,7 @@ export class Profile extends Component {
                 <h2>{this.state.userName}</h2>
               </Card.Title>
               <Card.Text>
-                <p>{this.state.userEmai}</p>
+                <p>{this.state.userEmail}</p>
               </Card.Text>
             </Card.Body>
           </Card>

@@ -6,8 +6,8 @@ class Books extends React.Component {
     return (
       <>
         <h2 style={{ textAlign: 'center' }}>My Favorite Books</h2>
-        {this.props.books.length &&
-          this.props.books.map((book, idx) => (
+        {this.props.books.length && 
+        this.props.books.map((book, idx) => (
             <div key={idx} style={{ textAlign: 'center', color: 'pa-primary' }}>
               <ListGroup>
                 <ListGroup.Item>{book.name}</ListGroup.Item>

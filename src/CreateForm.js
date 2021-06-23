@@ -14,7 +14,7 @@ export class CreateForm extends Component {
         <Form.Group>
           <Form.Label>Book name</Form.Label>
           <Form.Control
-            onChange={(e) => this.props.updateBookName(e)}
+            onChange={(e) => this.props.updateBookName(e.target.value)}
             type='text'
           />
         </Form.Group>
@@ -22,7 +22,7 @@ export class CreateForm extends Component {
         <Form.Group>
           <Form.Label>Description</Form.Label>
           <Form.Control
-            onChange={(e) => this.props.updateBookDescription(e)}
+            onChange={(e) => this.props.updateBookDescription(e.target.value)}
             type='text'
           />
         </Form.Group>
@@ -30,7 +30,7 @@ export class CreateForm extends Component {
         <Form.Group>
           <Form.Label>Status</Form.Label>
           <Form.Control
-            onChange={(e) => this.props.updateBookStatus(e)}
+            onChange={(e) => this.props.updateBookStatus(e.target.value)}
             type='text'
           />
         </Form.Group>
